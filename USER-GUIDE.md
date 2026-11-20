@@ -83,7 +83,7 @@ The summary keeps itself current as mail, tasks and calendar change.
 
 ## 4. Email (default module)
 
-Outlook-style layout: folder tree | message list | reading pane. The reading pane
+Modern style layout: folder tree | message list | reading pane. The reading pane
 can sit on the right or at the bottom (layout toggle in the toolbar).
 In dark theme, mail-declared colors inside HTML messages (white backgrounds from
 provider "security alert" mails, for example) are flattened to the app's dark
@@ -358,14 +358,13 @@ preview (`npm run dev`) shows a read-only demo.
 
 ## 10. Recordings
 
-Voice memos in the style of GNOME Sound Recorder, reachable from its own rail
-button below Messenger.
+Voice memos, reachable from its own rail button below Messenger.
 
 - **Record** captures from the microphone (Opus/WebM by default). A live level
   meter shows the waveform while recording and a red timer counts elapsed time.
 - **Pause / Resume** during a recording; **Stop** saves it automatically. Files
   are stored in the app data directory (`recordings/`) and never overwrite an
-  existing name — duplicates get numbered like GNOME Sound Recorder does.
+  existing name — duplicates get numbered like Sound Recorder does.
 - Each entry shows its name, date ("today", "yesterday", "N days ago"),
   duration and a cached waveform. **Play** streams it back (click again to
   stop), **Rename** changes the file, **Delete** removes recording and file.
@@ -374,17 +373,17 @@ button below Messenger.
 
 ## 11. AI
 
-ThunderAI-style assistant for mail and text work, in its own rail button below
+AI-style assistant for mail and text work, in its own rail button below
 Recordings. Works with local models (Ollama is the default — no account or API
 key needed) as well as OpenAI, Anthropic, Google Gemini and any
 OpenAI-compatible server (LM-Studio, vLLM…).
 
 - **Chat**: streamed multi-turn conversation with your configured model.
-- **Actions**: ThunderAI's prompt library over any text — rewrite polite /
+- **Actions**: AI's prompt library over any text — rewrite polite /
   formal, proofread, summarize into bullets, classify tone, spam check,
   suggest tags, translate, draft a reply. Results stream in place.
 - **Extract**: paste an email or note; the AI returns structured JSON
-  (ThunderAI's get_task / get_calendar_event prompts) and one click turns it
+  (AI's get_task / get_calendar_event prompts) and one click turns it
   into a real Task or Calendar event.
 - **On a message**: the mail ribbon's **AI Wizard** dropdown (left of Reply,
   see Email §4) — **Summarize** and **Translate** run directly on the open
@@ -404,7 +403,7 @@ OpenAI-compatible server (LM-Studio, vLLM…).
   *Re-Test* after the first test. Editing host or model resets it.
 - While any AI request is in flight the mouse shows the system **wait/clock
   cursor** across the whole window, so long generations are obviously busy.
-- **Prompts tab** (the ThunderAI "Manage prompts" section): the built-in
+- **Prompts tab** (the AI "Manage prompts" section): the built-in
   prompt library is **editable** — change a built-in's text and it is used
   everywhere (an "edited" badge marks it; *Reset* restores the shipped text),
   and you can create, edit or delete your **own prompts**. Click a
